@@ -2,6 +2,16 @@
 
   <p>HealthHub is a groundbreaking project in the healthcare domain, aimed at revolutionizing personalized healthcare excellence. This project harnesses the power of advanced technologies such as HTML, CSS, JavaScript, and Node.js to deliver a comprehensive web application tailored to meet the diverse needs of patients.</p>
 
+<h2>Requirements</h2>
+<p>
+  . node --version # Should be >= 18<br>
+  . on CMD run npm install @google/generative-ai<br>
+  . on CMD run npm install express<br>
+  . To run the AI-driven Assessment funtionality:<br>
+      1-First run "node backend.js" in CMD, this will run server side program which is necessary.<br>
+      2-Keep server side program running<br>
+      3-Open html file in browser<br>
+</p>
   <h2>Features</h2>
 
   <ul>
