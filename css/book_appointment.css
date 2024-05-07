@@ -1,0 +1,48 @@
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.content {
+    text-align: justify;
+    line-height: 1.6;
+    background-image: "images/stripes.jpeg";
+}
+
+header {
+    background-color: #fff; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: 1px solid #ddd; 
+}
+
+nav {
+    display: flex; 
+    align-items: center; 
+    flex-wrap: nowrap;
+}
+
+nav a, nav .button {
+    display: inline-block;
+    padding: 10px 20px; 
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333; 
+    font-weight: 600; 
+    border-radius: 3px; 
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover, nav .button:hover {
+    background-color: #f0f0f0; 
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

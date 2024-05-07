@@ -1,0 +1,190 @@
+body {
+    font-family: 'Google Sans', sans-serif; /* Use Google Sans as the primary font */
+    /* ... other existing body styles ... */ 
+
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f4f4f4; 
+    
+}
+
+/* ... other existing styles ... */
+
+.hero {
+    /* ... other existing hero styles ... */
+    background-image: url("C:/Users/abbas/OneDrive/Desktop/SE Project Health-Hub/Pages/stripes.jpeg");
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    position: relative; /* To position the overlay within the hero */
+    
+}
+
+header {
+    background-color: #fff; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: 1px solid #ddd; 
+}
+
+nav {
+    display: flex; 
+    align-items: center; 
+    flex-wrap: nowrap;
+}
+
+nav a, nav .button {
+    display: inline-block;
+    padding: 10px 20px; 
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333; 
+    font-weight: 600; 
+    border-radius: 3px; 
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover, nav .button:hover {
+    background-color: #f0f0f0; 
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px; 
+}
+
+.hero {
+    padding: 40px;
+    background-color: white; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+    color: #333; 
+    font-size: 2.5em; 
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature {
+    width: 30%; 
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.feature:hover {
+    background-color: #e0e0e0; 
+    cursor: pointer; 
+}
+
+.feature h3 {
+    color: #333;
+}
+
+.feature p {
+    color: #555; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feature {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .feature {
+        width: 100%; 
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ... other existing styles ... */
+
+.feature {
+    /* ... other existing feature styles ... */
+    background-color: rgba(255, 255, 255, 0.8); /* Add background color with opacity */ 
+}
+
+/* ... other existing styles ... */
+
+.hero p { 
+    /* ... other existing p styles ... */
+    background-color: rgba(255, 255, 255, 0.8); /* Add background color with opacity */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Adjust border-radius as needed */
+} 
+
+/* ... other existing styles ... */
+
+.feature {
+    /* ... other existing feature styles ... */
+    border: none; /* Remove the border */
+}
+
+.feature:hover {
+    background-color: #c2e7d9; /* Light green background on hover */
+    cursor: pointer; 
+}
+
+/* ... other existing styles ... */ 
+
+.feature h3, .feature p { /* Target h3 and p within .feature */
+    background-color: transparent; /* Remove background color */
+} 
+
+.hero p { 
+    /* ... other existing p styles ... */
+    background-color: transparent; /* Remove background color */
+    /* ... other styles for the paragraph ... */
+}
+
+/* ... other existing styles ... */
+
+.hero p {
+    /* ... other existing p styles ... */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* ... other existing styles ... */
+
+.feature {
+    /* ... other existing feature styles ... */
+    text-decoration: none; /* Remove underlines from links */
+    color: inherit; /* Inherit text color from parent */
+}
+
+.hero {
+    /* ... other existing hero styles ... */
+    background-image: url("https://www.healthhub.sg/assets/images/homepage/green_stripes_background.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

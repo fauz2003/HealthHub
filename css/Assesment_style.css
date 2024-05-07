@@ -1,0 +1,138 @@
+/* ... other existing styles ... */
+
+/* General Styles */ 
+body {
+    font-family: 'Google Sans', sans-serif; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f4f4f4;
+}
+
+header, footer { /* Assuming you want the same styles for header and footer */
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.hero {
+    padding: 40px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.5em;
+} 
+
+/* Assessment Section Styles */
+.questionnaire-section, .results-section, .historical-assessments {
+    margin-bottom: 40px; /* Add spacing between sections */
+}
+
+.questionnaire-section h3, .results-section h3, .historical-assessments h3 {
+    margin-bottom: 10px; /* Add spacing between heading and content */
+}
+
+/* Feature Box Styles (Removed) */ 
+/* .feature { ... } */
+/* .feature:hover { ... } */
+
+/* Other Styles as Needed */
+/* ... add more styles for specific elements ... */
+footer {
+
+        /* ... other existing footer styles ... */
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center;   /* Center content vertically (optional) */
+    
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Text box styles */
+.questionnaire-section form .question {
+    margin-bottom: 20px;
+}
+
+.questionnaire-section form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.questionnaire-section form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.3s ease;
+}
+
+.questionnaire-section form input[type="text"]:focus {
+    outline: none;
+    border-color: #66afe9;
+}
+
+/* Adjustments for small screens */
+@media screen and (max-width: 600px) {
+    .questionnaire-section form input[type="text"] {
+        width: calc(100% - 20px); /* Adjust for padding */
+    }
+}
+/* Submit button styles */
+.questionnaire-section form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #16793c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.questionnaire-section form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+

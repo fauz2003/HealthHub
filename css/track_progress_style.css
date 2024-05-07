@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: 'Google Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f4f4f4;
+}
+
+header, footer {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.progress-section {
+    text-align: center;
+}
+
+.progress-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.5em;
+}
+
+.progress-section p {
+    margin-bottom: 20px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 50%; /* Change this value to represent the progress */
+    height: 20px;
+    background-color: #4caf50; /* Green */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Progress Bar Styles */
+.progress-bar-container {
+    width: 70%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    margin: 0 auto; /* Center the progress bar */
+}
+
+.progress-bar {
+    width: 50%; /* Change this value to represent the progress */
+    height: 20px;
+    background-color: #4caf50; /* Green */
+    background-image: linear-gradient(to right, #4caf50, #4caf50); /* Add gradient effect */
+    border-radius: 10px; /* Add rounded corners */
+}
