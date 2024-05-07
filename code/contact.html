@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - HealthHub</title>
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+</head>
+<body>
+    <header>
+        <h1>Health Hub</h1>
+        <nav>
+            <a href="Landing_Page.html">Home</a>
+            <a href="User_Dashboard.html">Dashboard</a>
+            <a href="about.html">About Us</a>
+            <a href="login.html" class="button">Login</a>
+            <a href="Signup.html" class="button">Sign Up</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="header">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="content">
+            <form action="/submit_form" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Submit" onclick="alert('Message sent'); window.location.href='contact.html';">
+
+            </form>
+        </div>
+    </div>
+    <br><br><br><br>
+    <footer>
+        <p>© 2023 Health Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

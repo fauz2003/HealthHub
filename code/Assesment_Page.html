@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Hub - Assessment</title> 
+    <link rel="stylesheet" href="../css/Assesment_style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Health Hub</h1>
+        <nav>
+            <a href="User_Dashboard.html">Dashboard</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="Landing_Page.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h2>Health Assessment</h2> 
+
+            <div class="questionnaire-section">
+                <h3>Personalized Questionnaire</h3>
+                <p>Please answer the following questions to the best of your ability. Your responses will help us provide you with a comprehensive health assessment.</p>
+                <form id="questionnaire-form">
+                    <div class="question">
+                        <label for="q1">In general, how would you rate your health? (Excellent, Good, Fair, Poor)</label>
+                        <input type="text" id="q1" name="q1" placeholder="Enter health rating">
+                    </div>
+                    <div class="question">
+                        <label for="q2">Do you get enough sleep most nights (at least 7 hours)?</label>
+                        <input type="text" id="q2" name="q2" placeholder="Yes/No">
+                    </div>
+                    <div class="question">
+                        <label for="q3">Have you noticed any recent changes in your weight (unexpected gain or loss)?</label>
+                        <input type="text" id="q3" name="q3" placeholder="Yes/No">
+                    </div>
+                    <div class="question">
+                        <label for="q4">Are you able to complete your daily activities without excessive fatigue?</label>
+                        <input type="text" id="q4" name="q4" placeholder="Yes/No">
+                    </div>
+                    <div class="question">
+                        <label for="q5">Do you experience any frequent pain or discomfort?</label>
+                        <input type="text" id="q5" name="q5" placeholder="Yes/No">
+                    </div>
+                    <div class="question">
+                        <label for="q6">Do you have a healthy appetite and eat regular meals?</label>
+                        <input type="text" id="q6" name="q6" placeholder="Yes/No">
+                    </div>
+                    <div class="question">
+                        <label for="q7">Have you been feeling more stressed or anxious lately?</label>
+                        <input type="text" id="q7" name="q7" placeholder="Yes/No">
+                    </div>
+                    <div class="question">
+                        <label for="q8">Do you generally feel energized and ready to take on the day?</label>
+                        <input type="text" id="q8" name="q8" placeholder="Yes/No">
+                    </div>
+                    <button type="submit" id="submit-btn">Submit</button>
+                </form>
+            </div>
+
+            <div class="results-section"> 
+                <h3>Assessment Results</h3>
+                <div class="health-status">
+                    <h4>Your Health Status</h4>
+                    <p id="health-status-text">Based on your responses, here's a summary of your current health status...</p> 
+                </div> 
+                <div class="recommendations">
+                    <h4>Recommendations</h4>
+                    <p id="recommendations-text">To improve your well-being, we recommend the following...</p> 
+                </div>
+            </div>
+
+            <div class="historical-assessments">
+                <h3>Historical Assessments</h3>
+                <p>View and track your progress over time.</p>
+            </div> 
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 Health Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Include JavaScript file at the end of the body -->
+    <script src="../js/bottest.js"></script> 
+</body>
+</html>

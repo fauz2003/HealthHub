@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="../css/book_appointment.css">
+</head>
+<body>
+    <header>
+        <h1>Health Hub</h1>
+        <nav>
+            <a href="Landing_Page.html">Home</a>
+            <a href="User_Dashboard.html">Dashboard</a>
+            <a href="about.html">About Us</a>
+            <a href="Telehealth.html">View Doctors</a>
+    </header>
+    <div style="margin-left: 500px;margin-top: 50px;">
+        <h1>Book Appointment</h1>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+    
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required><br><br>
+    
+            <input type="submit" value="Book Appointment" onclick="window.location.href='book_appointment.html'">
+        </form>
+    </div>
+ 
+    <br><br><br><br>
+    <footer>
+        <p>© 2023 Health Hub. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Perform any necessary validation or processing here
+
+            alert('Appointment booked successfully!'); // Prompt the user with "ok"
+        });
+    </script>
+</body>
+</html>

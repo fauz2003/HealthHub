@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Health Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login_style.css">
+    <script>
+            function storeUsername() {
+                var username = document.getElementById("username").value;
+                localStorage.setItem("username", username);
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Health Hub</h1>
+        <nav>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="Landing_Page.html">Home</a> 
+        </nav>
+    </header>
+    <main>
+        <div class="login-form">
+            <h2>Login to an existing account</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" id="login-btn" onclick="storeUsername(); window.location.href='User_Dashboard.html';">Login</button>
+
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 Health Hub. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

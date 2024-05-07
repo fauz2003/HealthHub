@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Assessment</title>
+    <link rel="stylesheet" href="../css/Assesment_style.css"> 
+
+    <style>
+        body {
+    font-family: 'Google Sans', sans-serif; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f4f4f4;
+}
+
+header, footer { /* Assuming you want the same styles for header and footer */
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.hero {
+    padding: 40px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.5em;
+} 
+
+/* Assessment Section Styles */
+.questionnaire-section, .results-section, .historical-assessments {
+    margin-bottom: 40px; /* Add spacing between sections */
+}
+
+.questionnaire-section h3, .results-section h3, .historical-assessments h3 {
+    margin-bottom: 10px; /* Add spacing between heading and content */
+}
+
+/* Feature Box Styles (Removed) */ 
+/* .feature { ... } */
+/* .feature:hover { ... } */
+
+/* Other Styles as Needed */
+/* ... add more styles for specific elements ... */
+footer {
+
+        /* ... other existing footer styles ... */
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center;   /* Center content vertically (optional) */
+    
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Text box styles */
+.questionnaire-section form .question {
+    margin-bottom: 20px;
+}
+
+.questionnaire-section form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.questionnaire-section form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.3s ease;
+}
+
+.questionnaire-section form input[type="text"]:focus {
+    outline: none;
+    border-color: #66afe9;
+}
+
+/* Adjustments for small screens */
+@media screen and (max-width: 600px) {
+    .questionnaire-section form input[type="text"] {
+        width: calc(100% - 20px); /* Adjust for padding */
+    }
+}
+/* Submit button styles */
+.questionnaire-section form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #16793c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.questionnaire-section form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Health Hub</h1>
+        <nav>
+            <a href="User_Dashboard.html">Dashboard</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="Landing_Page.html">Logout</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Health Assessment</h2> 
+
+        <div class="questionnaire-section">
+            <h3>Personalized Questionnaire</h3>
+            <p>Please answer the following questions to the best of your ability. Your responses will help us provide you with a comprehensive health assessment.</p>
+            <form id="questionnaire-form">
+                <div class="question">
+                    <label for="q1">In general, how would you rate your health? (Excellent, Good, Fair, Poor)</label>
+                    <input type="text" id="q1" name="q1" placeholder="Enter health rating">
+                </div>
+                <div class="question">
+                    <label for="q2">Do you get enough sleep most nights (at least 7 hours)?</label>
+                    <input type="text" id="q2" name="q2" >
+                </div>
+                <div class="question">
+                    <label for="q3">Have you noticed any recent changes in your weight (unexpected gain or loss)?</label>
+                    <input type="text" id="q3" name="q3" >
+                </div>
+                <div class="question">
+                    <label for="q4">Are you able to complete your daily activities without excessive fatigue?</label>
+                    <input type="text" id="q4" name="q4" >
+                </div>
+                <div class="question">
+                    <label for="q5">Do you experience any frequent pain or discomfort?</label>
+                    <input type="text" id="q5" name="q5" >
+                </div>
+                <div class="question">
+                    <label for="q6">Do you have a healthy appetite and eat regular meals?</label>
+                    <input type="text" id="q6" name="q6" >
+                </div>
+                <div class="question">
+                    <label for="q7">Have you been feeling more stressed or anxious lately?</label>
+                    <input type="text" id="q7" name="q7" >
+                </div>
+                <div class="question">
+                    <label for="q8">Do you generally feel energized and ready to take on the day?</label>
+                    <input type="text" id="q8" name="q8" >
+                </div>
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <div class="results-section"> 
+            <h3>Assessment Results</h3>
+            <div class="health-status">
+                <h4><b>Your Health Status</b></h4>
+                <p id="health-status-text">Based on your responses, here's a summary of your current health status...</p> 
+            </div> 
+    </div>
+    <footer>
+        <p>© 2023 Health Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="frontend.js"></script>
+</body>
+</html>

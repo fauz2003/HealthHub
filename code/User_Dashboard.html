@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Hub - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/dashboard_style.css">
+    <script>
+        window.onload = function() {
+        //var username = localStorage.getItem("username");
+        var username = "Fauz";
+        document.getElementById("display").innerHTML = "Welcome " + username + "!";
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Health Hub</h1>
+    <nav>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="Landing_Page.html">Logout</a>
+    </nav>
+    </header>
+    <main>
+        <div class="dashboard">
+            <h2 id ="display">Welcome</h2>
+            <div class="features">
+                <a href="http://localhost:3000/assesment.html" class="feature">
+                    <h3>Health Assessments</h3>
+                    <p>Understand your current health status and track progress over time.</p>
+                </a> 
+                <a href="Telehealth.html" class="feature">
+                    <h3>Virtual Consultations</h3>
+                    <p>Connect with healthcare professionals remotely for convenient medical advice.</p>
+                </a>
+                <a href="Medical_Records.html" class="feature">
+                    <h3>Medical Records</h3>
+                    <p>Securely store, organize, and share your medical records with ease.</p>
+                </a>
+                <a href="medications.html" class="feature">
+                    <h3>Medications</h3>
+                    <p>Set up medication adherence plans and reminders.</p>
+                </a>
+                <a href="wellness.html" class="feature">
+                    <h3>Wellness Challenges</h3>
+                    <p>Browse and participate in wellness challenges to stay motivated.</p>
+                </a>
+                <a href="news.html" class="feature">
+                    <h3>Health Insights and Education</h3>
+                    <p>View personalized insights based on your health data and AI predictions.</p>
+                </a>
+            </div> 
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 Health Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

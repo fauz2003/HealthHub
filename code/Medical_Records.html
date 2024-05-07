@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Hub - Medical Records</title>
+    <link rel="stylesheet" href="../css/medical_records_style.css"> </head>
+<body>
+    <header>
+        <h1>Health Hub</h1>
+        <nav>
+            <a href="User_Dashboard.html">Dashhboard</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="Landing_Page.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h2>Medical Records</h2>
+
+            <div class="upload-section">
+                <h3>Upload New Record</h3>
+                <form action="#" method="post" enctype="multipart/form-data"> 
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <button type="submit" onclick="alert('File Uploaded successfully')">Upload</button>
+                </form> 
+            </div> 
+
+            <div class="manage-records">
+                <h3>Manage Records</h3>
+                <input type="text" placeholder="Search..."> 
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Record Name</th>
+                            <th>Category</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <td>Record 1</td>
+                            <td>Category A</td>
+                            <td>2023-08-15</td>
+                            <td>
+                                <button>Share</button>
+                                <button>Download</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                        <!-- Add more rows for additional records -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="share-records">
+                <h3>Share Records</h3>
+                <p>Securely share your medical records with healthcare providers.</p> 
+                <form action="#">
+                    </form>
+            </div> 
+        </div> 
+    </main>
+
+    <footer>
+        <p>© 2023 Health Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

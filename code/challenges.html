@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Hub - Telehealth</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Telehealth_style.css"> <!-- Assuming you have a separate CSS file for telehealth page -->
+</head>
+<body>
+    <header>
+        <h1>Health Hub</h1>
+        <nav>
+            <a href="User_Dashboard.html">Dashboard</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="Landing_Page.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h2>Challenges</h2>
+            <p>Browse available fitness challenges and book your slot!</p>
+        </div>
+    
+        <div class="doctor-list">
+            <!-- Doctor card 1 -->
+            <div class="doctor-card">
+                <img src="../images/pushups.jpeg" alt="Challenge 1">
+                <div class="doctor-details">
+                    <h3>50 pushup challenge</h3>
+                    <p>Venue: harpoon residence, G13</p>
+                    <p>Monday, 9 AM - 5 PM</p>
+                </div>
+                <a>
+                    <button onclick="window.location.href='book_challenge.html'">Reserve your slot</button>
+                </a>
+                
+            </div>
+    
+            <!-- Doctor card 2 -->
+            <div class="doctor-card">
+                <img src="../images/marathon.jpeg" alt="Doctor 2">
+                <div class="doctor-details">
+                    <h3>30 km Marathon</h3>
+                    <p>Venue: F9 Park</p>
+                    <p>Thursday, 10 AM - 3 PM</p>
+                </div>
+                <a>
+                    <button onclick="window.location.href='book_challenge.html'">Reserve your slot</button>
+                </a>
+            </div>
+    
+            <!-- Add more doctor cards -->
+            <div class="doctor-card">
+                <img src="../images/mrOlympia.jpeg" alt="Doctor 3">
+                <div class="doctor-details">
+                    <h3>Mr Olympia</h3>
+                    <p>Barkat Plaza, E11</p>
+                    <p>Wednesday, 8 AM - 4 PM</p>
+                </div>
+                <a>
+                    <button onclick="window.location.href='book_challenge.html'">Reserve your slot</button>
+                </a>
+            </div>
+
+
+        </div>
+    </main>
+    
+    
+
+    <footer>
+        <p>© 2023 Health Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

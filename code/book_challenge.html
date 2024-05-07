@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Challenge</title>
+    <link rel="stylesheet" href="../css/book_appointment.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex; 
+    align-items: center; 
+    flex-wrap: nowrap;
+}
+
+nav a, nav .button {
+    display: inline-block;
+    align-items: end;
+    padding: 10px 20px; 
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333; 
+    font-weight: 600; 
+    border-radius: 3px; 
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover, nav .button:hover {
+    background-color: #f0f0f0; 
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Health Hub</h1>
+        <nav>
+            <a href="Landing_Page.html">Home</a>
+            <a href="User_Dashboard.html">Dashboard</a>
+            <a href="about.html">About Us</a>
+            <a href="Telehealth.html">View Doctors</a>
+    </header>
+    <div style="margin-left: 500px;margin-top: 50px;">
+        <h1>Book Challenges</h1>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <input type="submit" value="Book Appointment" onclick="window.location.href='book_challenge.html'">
+        </form>
+    </div>
+ 
+    <br><br><br><br>
+    <footer>
+        <p>© 2023 Health Hub. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Perform any necessary validation or processing here
+
+            alert('Challenged booked successfully!'); // Prompt the user with "ok"
+        });
+    </script>
+</body>
+</html>
