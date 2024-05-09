@@ -9,9 +9,26 @@
     <script>
         function storeUsername() {
             var username = document.getElementById("username").value;
-            localStorage.setItem("username", username);
+            var password = document.getElementById("password").value;
+            var email = document.getElementById("email").value;
+
+            if (username.length >= 2 && password.length >= 8 && email.includes('@')) {
+                localStorage.setItem("username", username);
+                window.location.href = 'User_Dashboard.html';
+            } else {
+                alert("Username must be at least 2 characters, password must be at least 8 characters, and email must include '@'.");
+            }
         }
-</script>
+
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -32,11 +49,15 @@
                     <input type="text" id="username" name="username" required>
                 </div>
                 <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required>
+                    <input type="checkbox" onclick="togglePasswordVisibility();"> Show Password
                 </div>
-                <button type="submit" id="login-btn" onclick="storeUsername();window.location.href='User_Dashboard.html';">Signup & Login</button>
-
+                <button type="button" id="login-btn" onclick="storeUsername();">Signup & Login</button>
             </form>
         </div>
     </main>
