@@ -7,10 +7,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/login_style.css">
     <script>
-            function storeUsername() {
-                var username = document.getElementById("username").value;
+        function storeUsername() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Regular expression to check if password contains at least one digit and one special character
+            var passwordRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
+
+            if (username.length >= 3 && (password.length > 8 || passwordRegex.test(password))) {
                 localStorage.setItem("username", username);
+                window.location.href = 'User_Dashboard.html';
+            } else {
+                alert("Username must be at least 3 characters, password must be at least 8 characters, and password must contain at least one digit and one special character.");
             }
+        }
+
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
     </script>
 </head>
 <body>
@@ -33,9 +52,9 @@
                 <div class="input-group">
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required>
+                    <input type="checkbox" onclick="togglePasswordVisibility()"> Show Password
                 </div>
-                <button type="submit" id="login-btn" onclick="storeUsername(); window.location.href='User_Dashboard.html';">Login</button>
-
+                <button type="button" id="login-btn" onclick="storeUsername();">Login</button>
             </form>
         </div>
     </main>
