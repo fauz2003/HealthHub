@@ -5,7 +5,7 @@ const app = express();
 const port = 3000; // Or your desired port
 
 const MODEL_NAME = "gemini-1.5-pro-latest";
-const API_KEY = "AIzaSyCS4zuzxJf9IuBf_wIa4jl5vtsXzv80Elw"; // Replace with your actual API key
+const API_KEY = ""; // Replace with your actual API key
 
 app.use(express.static(__dirname));
 app.use(express.json()); // Enable JSON body parsing
