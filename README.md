@@ -8,9 +8,10 @@
   . on CMD run npm install @google/generative-ai<br>
   . on CMD run npm install express<br>
   . To run the AI-driven Assessment funtionality:<br>
-      1-First run "node backend.js" in CMD, this will run server side program which is necessary.<br>
-      2-Keep server side program running<br>
-      3-Open html file in browser<br>
+      1-Add your own Gemini API key in "backend.js".<br>
+      2-First run "node backend.js" in CMD, this will run server side program which is necessary.<br>
+      3-Keep server side program running<br>
+      4-Open html file in browser<br>
 </p>
   <h2>Features</h2>
 
